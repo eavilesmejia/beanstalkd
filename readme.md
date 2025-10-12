@@ -24,7 +24,7 @@ A high-performance, feature-complete Go client for the [Beanstalk work queue](ht
 ## Installation
 
 ```bash
-go get github.com/cw-elk/beanstalkd
+go get github.com/eavilesmejia/beanstalkd
 ```
 
 ## Quick Start
@@ -37,7 +37,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/cw-elk/beanstalkd"
+    "github.com/eavilesmejia/beanstalkd"
 )
 
 func main() {
@@ -75,7 +75,7 @@ import (
     "fmt"
     "log"
     "time"
-    "github.com/cw-elk/beanstalkd"
+    "github.com/eavilesmejia/beanstalkd"
 )
 
 func main() {
@@ -328,7 +328,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/cw-elk/beanstalkd"
+    "github.com/eavilesmejia/beanstalkd"
 )
 
 func main() {
@@ -377,7 +377,7 @@ import (
     "fmt"
     "log"
     "time"
-    "github.com/cw-elk/beanstalkd"
+    "github.com/eavilesmejia/beanstalkd"
 )
 
 func main() {
@@ -439,7 +439,7 @@ import (
     "log"
     "sync"
     "time"
-    "github.com/cw-elk/beanstalkd"
+    "github.com/eavilesmejia/beanstalkd"
 )
 
 func main() {
@@ -505,7 +505,7 @@ import (
     "fmt"
     "log"
     "time"
-    "github.com/cw-elk/beanstalkd"
+    "github.com/eavilesmejia/beanstalkd"
 )
 
 func main() {

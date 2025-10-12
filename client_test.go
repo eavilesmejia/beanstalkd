@@ -123,6 +123,34 @@ func (s *mockServer) SendReservedResponse(jobID uint64, bodySize int, body strin
 	return s.writer.Flush()
 }
 
+// SendStatsResponse sends a stats response with YAML data to the client.
+func (s *mockServer) SendStatsResponse(dataSize int, yamlData string) error {
+	if s.writer == nil {
+		return fmt.Errorf("no connection")
+	}
+
+	// Send OK response with data size
+	response := fmt.Sprintf("OK %d", dataSize)
+	_, err := s.writer.WriteString(response + "\r\n")
+	if err != nil {
+		return err
+	}
+
+	// Send YAML data
+	_, err = s.writer.WriteString(yamlData)
+	if err != nil {
+		return err
+	}
+
+	// Send CRLF terminator
+	_, err = s.writer.WriteString("\r\n")
+	if err != nil {
+		return err
+	}
+
+	return s.writer.Flush()
+}
+
 // ReadCommand reads a command from the client.
 func (s *mockServer) ReadCommand() (string, error) {
 	if s.reader == nil {

@@ -10,7 +10,7 @@ A high-performance, feature-complete Go client for the [Beanstalk work queue](ht
 - **Context Support**: Built-in support for Go contexts for cancellation and timeouts
 - **Connection Pooling**: Automatic connection management with health checks
 - **Comprehensive Testing**: Extensive test coverage with mock server support
-- **Modern Go**: Written in Go 1.25+ with latest language features and optimizations
+- **Modern Go**: Written in Go 1.24+ with latest language features and optimizations
 
 ### Advanced Features
 

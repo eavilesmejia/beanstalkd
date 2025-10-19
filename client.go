@@ -216,9 +216,6 @@ func (c *Client) Close() error {
 		return err
 	}
 
-	if err := c.Quit(); err != nil {
-		return err
-	}
 	return nil
 }
 

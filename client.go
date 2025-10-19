@@ -215,6 +215,10 @@ func (c *Client) Close() error {
 		c.conn = nil
 		return err
 	}
+
+	if err := c.Quit(); err != nil {
+		return err
+	}
 	return nil
 }
 
